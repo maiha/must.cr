@@ -1,4 +1,4 @@
-# must.cr
+# must.cr [![Build Status](https://travis-ci.org/maiha/must.cr.svg?branch=master)](https://travis-ci.org/maiha/must.cr)
 
 Library for dynamic typing in [Crystal](http://crystal-lang.org/).
 
