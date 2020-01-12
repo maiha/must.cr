@@ -34,7 +34,7 @@ Library for dynamic typing in [Crystal](http://crystal-lang.org/).
 
 ```crystal
 json = JSON.parse(%|{"a": 1}|)
-json["a"].as_f                   # Unhandled exception: cast from Int64 to Float64 failed (compile time)
+json["a"].as_f                   # Unhandled exception: cast from Int64 to Float64 failed (runtime)
 json["a"].raw.to_f               # undefined method 'to_f' for Array(JSON::Any) (compile time)
 json["a"].raw.must.cast(Float64) # => 1.0
 ```
