@@ -58,6 +58,17 @@ dependencies:
 require "must"
 ```
 
+## API
+
+### any?, any
+Checks `empty?` or not. It returns `true` if the class doesn't have `empty?` method.
+```crystal
+1.must.any?  # => true
+1.must.any   # => 1
+"".must.any? # => false
+"".must.any  # raises Must::Error
+```
+
 ## Development
 
 ## Contributing
