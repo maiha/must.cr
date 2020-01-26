@@ -10,6 +10,14 @@ struct Must::Rule(T)
     end
   end
 
+  def any(*args, **opts) : T
+    ::Must::Any.any(@value, *args, **opts)
+  end
+
+  def any? : Bool
+    ::Must::Any.any?(@value)
+  end
+
   def cast(klass : U.class) : U forall U
     ::Must::Cast.cast(@value, U)
   end

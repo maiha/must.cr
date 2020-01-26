@@ -7,6 +7,12 @@ module TOML
   alias Table = Hash(String, Type)
 end
 
+macro must_error(expr)
+  expect_raises(Must::Error) do
+    {{expr}}
+  end
+end
+
 macro cast_error(expr)
   expect_raises(Must::CastError) do
     {{expr}}
