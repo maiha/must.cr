@@ -47,7 +47,7 @@ json["a"].raw.must.cast(Float64) # => 1.0
 dependencies:
   must:
     github: maiha/must
-    version: 0.1.0
+    version: 0.2.0
 ```
 
 2. Run `shards install`
